@@ -33,8 +33,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ### 📁 Projects Section
 
-<img width="1643" height="926" alt="Screenshot 2025-08-11 230930" src="https://github.com/user-attachments/assets/7fbd0238-c2db-463f-b340-3b8b6e318588" />
-
+<img width="1624" height="859" alt="Screenshot 2025-08-11 233121" src="https://github.com/user-attachments/assets/2c95160b-3bf6-4f12-9541-b3530cab6f3a" />
 
 ### 📬 Contact Section
 
