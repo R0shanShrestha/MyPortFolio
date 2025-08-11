@@ -1,0 +1,114 @@
+[
+  {
+    "nav": [
+      {
+        "logo": ["./src/assets/logo.png"],
+        "links": ["About Me", "Portfolio", "Blogs"],
+        "contacts": ["Let's Talk"]
+      }
+    ],
+    "homesection": [
+      {
+        "name": "Roshan Newar",
+        "userimg": ["./src/assets/user1.png", "./src/assets/biguser.png"],
+        "projectcompleted": 15
+      }
+    ],
+    "aboutme": [
+      {
+        "image": "./src/assets/biguser.png",
+        "description": [
+          {
+            "para1": "I’m Roshan Shrestha, a full stack developer passionate about creating helpful web apps like Study Buddy. 💻✨",
+            "para2": "With 4 years’ experience in web development and design, I’m focused on AI/ML, coding, and guiding others to start their tech careers. 🤖🐍🚀",
+            "para3": "These days, I spend my time designing, learning AI/ML with Python, and coding. I also enjoy helping others launch their tech careers by building their own web apps. 🤖🐍🚀",
+            "para4": "Outside work, I love playing guitar, gaming, and spending time with my dogs. 🎸🎮🐶"
+          }
+        ],
+        "resume": "./src/assets/home.png"
+      }
+    ],
+    "portfolio": [
+      {
+        "webproject": [
+          {
+            "img": "./src/assets/home.png",
+            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+          },
+          {
+            "img": "./src/assets/home.png",
+            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+          },
+          {
+            "img": "./src/assets/home.png",
+            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+          },
+          {
+            "img": "./src/assets/home.png",
+            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+          }
+        ]
+      }
+    ],
+    "blogs": [
+      {
+        "img": "./src/assets/home.png",
+        "category": "Design",
+        "postat": "1 min ago",
+        "desc": "Exploring design and creativity powered by artificial intelligence. "
+      },
+      {
+        "img": "./src/assets/home.png",
+        "category": "Design",
+        "postat": "1 min ago",
+        "desc": "Exploring design and creativity powered by artificial intelligence. "
+      },
+      {
+        "img": "./src/assets/home.png",
+        "category": "Design",
+        "postat": "1 min ago",
+        "desc": "Exploring design and creativity powered by artificial intelligence. "
+      },
+      {
+        "img": "./src/assets/home.png",
+        "category": "Design",
+        "postat": "1 min ago",
+        "desc": "Exploring design and creativity powered by artificial intelligence. "
+      }
+    ],
+    "skills": [
+      {
+        "name": "html",
+        "img": "./src/assets/html.png"
+      },
+      {
+        "name": "css",
+        "img": "./src/assets/css.png"
+      },
+      {
+        "name": "js",
+        "img": "./src/assets/js.png"
+      },
+      {
+        "name": "node",
+        "img": "./src/assets/node.png"
+      },
+      {
+        "name": "mongo",
+        "img": "./src/assets/mongo.png"
+      },
+      {
+        "name": "mysql",
+        "img": "./src/assets/mysql.png"
+      },
+      {
+        "name": "react",
+        "img": "./src/assets/react.png"
+      },
+      {
+        "name": "python",
+        "img": "./src/assets/python.png"
+      }
+    ]
+  }
+]
