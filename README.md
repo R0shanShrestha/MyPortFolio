@@ -27,6 +27,8 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ### 🏠 Home Page
 
 <img width="1657" height="932" alt="Screenshot 2025-08-11 230656" src="https://github.com/user-attachments/assets/6cd8f81c-c961-4e15-9bad-b4eebb627428" />
+
+
 ### 🏠 About Page
 
 <img width="1647" height="827" alt="Screenshot 2025-08-11 230720" src="https://github.com/user-attachments/assets/5bb0e8e0-ba34-43d4-a34f-c2f3756fc241" />
