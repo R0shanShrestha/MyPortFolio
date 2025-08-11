@@ -12,8 +12,8 @@ import Footer from "../components/Footer";
 const Homepage = ({ data }) => {
   const { nav, homesection, aboutme, portfolio, blogs, skills } = data[0];
   return (
-    <main className="px-20 border  border-purple-500 w-full h-full">
-      <section className=" h-full w-full">
+    <main className="px-20    w-full h-full ">
+      <section className=" h-full w-full ">
         <Home nav={nav} homesection={homesection} />
         <Skills />
         <Aboutme data={aboutme} />

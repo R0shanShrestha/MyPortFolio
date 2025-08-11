@@ -12,3 +12,7 @@
 .secondary{
   color: #7C7777;
 }
+
+.no-scroller::-webkit-scrollbar{
+  display: none;
+}

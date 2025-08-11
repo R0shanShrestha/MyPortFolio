@@ -26,14 +26,14 @@ const Portfolio = () => {
   ];
   // 1,2,3,4,5
   return (
-    <div className="flex border  w-full  my-30  flex-col gap-10 overflow-hidden">
+    <div className="flex w-full  my-30  flex-col gap-10  px-10 overflow-hidden">
       <div className="flex text-sm h-10 gap-5">
         <Showcase text={"Web Project"} color={"bg-zinc-900"} />
         <Showcase text={"Graphic Project"} color={"bg-gray-400"} />
       </div>
       <div>
         <h1 className="font-bold px-3">A collection of my project</h1>
-        <div className="flex gap-20 mt-10 border overflow-x-scroll p-10">
+        <div className="flex gap-20 mt-10  overflow-x-scroll no-scroller p-10">
           {prj.map((pr, id) => (
             <div
               key={id}

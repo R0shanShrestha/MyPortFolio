@@ -7,7 +7,7 @@ import Showcase from "./Showcase";
 
 const Skills = () => {
   return (
-    <div className="w-full border-amber-700 flex justify-evenly border-2 p-2 gap-5 flex-col overflow-hidden">
+    <div className="w-full  flex justify-evenly  p-2 gap-5 flex-col overflow-hidden">
       <Showcase text={"Skills"} />
       <Marquee>
         {skills.map(({ icon: Icon, skillName }) => (
