@@ -2,6 +2,9 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experience in a clean and professional manner.
 
+## View my Portfolio
+[https://roshan-newar.vercel.app/]
+
 ---
 
 ## ✨ **Features** ✨
