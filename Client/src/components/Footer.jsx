@@ -1,29 +1,44 @@
 import React from "react";
-import { DiGithub, DiGithubFull } from "react-icons/di";
 import { FaFacebook, FaGithub } from "react-icons/fa";
-import { Link } from "react-router";
 
 const Footer = ({ link }) => {
+  const handleScroll = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="bg-zinc-950 w-full text-white  p-10">
-      <div className="flex justify-evenly items-center">
-        <div className=" gap-8 flex-col flex">
-          <div className="bg-amber-50 w-fit px-4 py-1.5 text-sm rounded-md text-slate-800 font-bold">
-            <span>Home</span>
-          </div>
-          <ul className="flex gap-10 text-sm">
+    <div className="bg-zinc-950 w-full text-white p-10">
+      <div className="flex justify-evenly items-center flex-wrap gap-6">
+        <div className="gap-8 flex-col flex">
+          <ul className="flex gap-5 flex-col text-sm cursor-pointer">
+            <li onClick={() => handleScroll("home")}>Home</li>
             {link[0].links.map((el, idx) => (
-              <li key={idx}>{el}</li>
+              <li key={idx} onClick={() => handleScroll(el)}>
+                {el}
+              </li>
             ))}
           </ul>
         </div>
-        <div className="text-3xl flex gap-2">
-          <Link to={"https://www.facebook.com/"}>
+        <div className="text-3xl flex gap-6">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
             <FaFacebook />
-          </Link>
-          <Link>
-            <FaGithub to={"https://github.com/"} />
-          </Link>
+          </a>
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
         </div>
       </div>
     </div>

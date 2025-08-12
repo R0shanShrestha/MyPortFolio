@@ -8,7 +8,7 @@ const Portfolio = ({ setTotalPrj }) => {
   const prj = prjs[0].portfolio[0].webproject;
   // 1,2,3,4,5
   return (
-    <div className="flex w-full  my-30  flex-col gap-10  px-10 overflow-hidden">
+    <div className="flex w-full  my-30  flex-col gap-10  lg:px-10 ">
       <div className="flex text-sm h-10 gap-5">
         <Showcase text={"Web Project"} color={"bg-zinc-900"} />
         <Showcase text={"Graphic Project"} color={"bg-gray-400"} />
@@ -16,9 +16,9 @@ const Portfolio = ({ setTotalPrj }) => {
       <div>
         <div className="flex justify-between">
           <h1 className="font-bold px-3">A collection of my project</h1>
-          Total Projects : {prj.length}
+          <span className="hidden md:block">Total Projects : {prj.length}</span>
         </div>
-        <div className="flex gap-20 mt-10  overflow-x-scroll no-scroller p-10 cursor-pointer">
+        <div className="flex gap-20 mt-10  overflow-x-scroll no-scroller md:p-10 cursor-pointer">
           <Marquee>
           {prj.map((pr, id) => (
             <a href={pr.link} target="_blank">

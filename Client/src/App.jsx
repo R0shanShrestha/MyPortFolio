@@ -5,7 +5,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 const App = () => {
   return (
-    <div className=" ">
+    <div className="no-scroller ">
       <Homepage data={assets} />
       <Footer link={assets[0].nav} />
     </div>
