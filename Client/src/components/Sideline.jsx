@@ -1,9 +1,9 @@
 import React from "react";
-import sideline from '../assets/SideLine.png'
+// import sideline from '../assets/SideLine.png'
 
 const Sideline = () => {
   return (
-    <img src={sideline} alt="not found" className="w-1" />
+    // <img src={sideline} alt="not found" className="w-1" />
   );
 };
 

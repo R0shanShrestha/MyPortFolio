@@ -5,9 +5,7 @@ import Aboutme from "../components/Aboutme";
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
 import Blogs from "../components/Blogs";
-import Sideline from "../components/Sideline";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 
 const Homepage = ({ data }) => {
   const { nav, homesection, aboutme, blogs, skills, portfolio } = data[0];

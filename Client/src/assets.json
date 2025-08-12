@@ -2,7 +2,7 @@
   {
     "nav": [
       {
-        "logo": ["./src/assets/logo.png"],
+        "logo": ["./logo.png"],
         "links": ["About Me", "Portfolio", "Blogs"],
         "contacts": ["Let's Talk"]
       }
@@ -10,13 +10,13 @@
     "homesection": [
       {
         "name": "Roshan Newar",
-        "userimg": ["./src/assets/user1.png", "./src/assets/biguser.png"],
+        "userimg": ["./user1.png", "./biguser.png"],
         "projectcompleted": 15
       }
     ],
     "aboutme": [
       {
-        "image": "./src/assets/biguser.png",
+        "image": "./biguser.png",
         "description": [
           {
             "para1": "I’m Roshan Shrestha, a full stack developer passionate about creating helpful web apps like Study Buddy. 💻✨",
@@ -25,37 +25,37 @@
             "para4": "Outside work, I love playing guitar, gaming, and spending time with my dogs. 🎸🎮🐶"
           }
         ],
-        "resume": "./src/assets/home.png"
+        "resume": "./home.png"
       }
     ],
     "portfolio": [
       {
         "webproject": [
           {
-            "img": "./src/assets/projects/portfolio.png",
+            "img": "./projects/portfolio.png",
             "link": "#",
             "desc": "Roshan Newar, crafting innovative web solutions that merge creativity, functionality, and precision into seamless experiences."
           },
           {
-            "img": "./src/assets/projects/looksy.png",
+            "img": "./projects/looksy.png",
             "link": "https://looksy-8tlv.vercel.app/",
             "desc": "Discover endless creativity with Looksy — high-quality images to spark ideas and inspire your vision.",
             "status": true
           },
           {
-            "img": "./src/assets/projects/studybuddy.png",
+            "img": "./projects/studybuddy.png",
             "link": "https://study-buddy-ai-lac.vercel.app/",
             "desc": "Study Buddy: Your AI Partner for Smarter Learning Success 📚🤖",
             "status": true
           },
           {
-            "img": "./src/assets/projects/mythrought.png",
+            "img": "./projects/mythrought.png",
             "link": "#",
             "desc": "Code War 1.0 Poster Design by Me and my team",
             "status": false
           },
           {
-            "img": "./src/assets/projects/rejectrumble.png",
+            "img": "./projects/rejectrumble.png",
             "link": "#",
             "desc": "Roll the dice, test your luck, and multiply your winnings in thrilling Reject Rumble gameplay.",
             "status": false
@@ -65,25 +65,25 @@
     ],
     "blogs": [
       {
-        "img": "./src/assets/home.png",
+        "img": "./home.png",
         "category": "Design",
         "postat": "1 min ago",
         "desc": "Exploring design and creativity powered by artificial intelligence. "
       },
       {
-        "img": "./src/assets/home.png",
+        "img": "./home.png",
         "category": "Design",
         "postat": "1 min ago",
         "desc": "Exploring design and creativity powered by artificial intelligence. "
       },
       {
-        "img": "./src/assets/home.png",
+        "img": "./home.png",
         "category": "Design",
         "postat": "1 min ago",
         "desc": "Exploring design and creativity powered by artificial intelligence. "
       },
       {
-        "img": "./src/assets/home.png",
+        "img": "./src/home.png",
         "category": "Design",
         "postat": "1 min ago",
         "desc": "Exploring design and creativity powered by artificial intelligence. "
@@ -92,35 +92,35 @@
     "skills": [
       {
         "name": "html",
-        "img": "./src/assets/html.png"
+        "img": "./src/html.png"
       },
       {
         "name": "css",
-        "img": "./src/assets/css.png"
+        "img": "./src/css.png"
       },
       {
         "name": "js",
-        "img": "./src/assets/js.png"
+        "img": "./src/js.png"
       },
       {
         "name": "node",
-        "img": "./src/assets/node.png"
+        "img": "./src/node.png"
       },
       {
         "name": "mongo",
-        "img": "./src/assets/mongo.png"
+        "img": "./src/mongo.png"
       },
       {
         "name": "mysql",
-        "img": "./src/assets/mysql.png"
+        "img": "./src/mysql.png"
       },
       {
         "name": "react",
-        "img": "./src/assets/react.png"
+        "img": "./src/react.png"
       },
       {
         "name": "python",
-        "img": "./src/assets/python.png"
+        "img": "./src/python.png"
       }
     ]
   }
