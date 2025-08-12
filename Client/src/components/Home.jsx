@@ -50,7 +50,7 @@ const Home = ({ nav, homesection, totalPrj }) => {
             onClick={() => {
               handleScroll("Portfolio");
             }}
-            className="hidden md:flex font-medium text-slate-500 flex items-center gap-3 animate-bounce mt-6 cursor-pointer text-sm"
+            className=" md:flex font-medium text-slate-500 flex items-center gap-3 animate-bounce mt-6 cursor-pointer text-sm"
           >
             Scroll down <GoArrowDown />
           </div>
