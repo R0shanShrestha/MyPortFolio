@@ -1,8 +1,16 @@
 import React from "react";
+import Showcase from "./Showcase";
 
 const Contact = () => {
   return (
-    <div className="w-full justify-center flex my-50">
+    <div className="w-full justify-center px-10 flex-col flex my-50">
+      <div
+        className="flex text-sm
+       h-10 gap-5"
+      >
+        <Showcase text={"Contact Me"} color={"bg-gray-500"} />
+        {/* <Showcase text={"Graphic Project"} color={"bg-gray-400"} /> */}
+      </div>
       <div className="min-w-[400px]  p-5 text-center  flex flex-col items-center gap-5">
         <h1 className="lg:text-3xl font-bold">
           Have a vision? Let's make it happen!

@@ -13,6 +13,10 @@
   color: #7C7777;
 }
 
+button{
+  cursor: pointer;
+}
+
 .no-scroller::-webkit-scrollbar{
   display: none;
 }

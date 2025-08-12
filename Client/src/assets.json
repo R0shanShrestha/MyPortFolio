@@ -32,20 +32,33 @@
       {
         "webproject": [
           {
-            "img": "./src/assets/home.png",
-            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+            "img": "./src/assets/projects/portfolio.png",
+            "link": "#",
+            "desc": "Roshan Newar, crafting innovative web solutions that merge creativity, functionality, and precision into seamless experiences."
           },
           {
-            "img": "./src/assets/home.png",
-            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+            "img": "./src/assets/projects/looksy.png",
+            "link": "https://looksy-8tlv.vercel.app/",
+            "desc": "Discover endless creativity with Looksy — high-quality images to spark ideas and inspire your vision.",
+            "status": true
           },
           {
-            "img": "./src/assets/home.png",
-            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+            "img": "./src/assets/projects/studybuddy.png",
+            "link": "https://study-buddy-ai-lac.vercel.app/",
+            "desc": "Study Buddy: Your AI Partner for Smarter Learning Success 📚🤖",
+            "status": true
           },
           {
-            "img": "./src/assets/home.png",
-            "desc": "Here’s a clean wireframe layout for your About Page — simple blocks and arrangement you can sketch or visualize before coding"
+            "img": "./src/assets/projects/mythrought.png",
+            "link": "#",
+            "desc": "Code War 1.0 Poster Design by Me and my team",
+            "status": false
+          },
+          {
+            "img": "./src/assets/projects/rejectrumble.png",
+            "link": "#",
+            "desc": "Roll the dice, test your luck, and multiply your winnings in thrilling Reject Rumble gameplay.",
+            "status": false
           }
         ]
       }
