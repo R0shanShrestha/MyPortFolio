@@ -19,10 +19,10 @@
         "image": "./biguser.png",
         "description": [
           {
-            "para1": "I’m Roshan Shrestha, a full stack developer passionate about creating helpful web apps like Study Buddy. 💻✨",
-            "para2": "With 4 years’ experience in web development and design, I’m focused on AI/ML, coding, and guiding others to start their tech careers. 🤖🐍🚀",
-            "para3": "These days, I spend my time designing, learning AI/ML with Python, and coding. I also enjoy helping others launch their tech careers by building their own web apps. 🤖🐍🚀",
-            "para4": "Outside work, I love playing guitar, gaming, and spending time with my dogs. 🎸🎮🐶"
+            "para1": "I’m Roshan Shrestha, a Full Stack Developer passionate about building useful web apps like Study Buddy. 💻✨",
+            "para2": "With 4 years in web development and design, I focus on AI/ML, coding, and mentoring future tech talents. 🤖🚀",
+            "para3": "Currently, I’m diving deeper into AI/ML with Python while creating intuitive, impactful web apps. 🐍💡",
+            "para4": "Beyond tech, I enjoy playing guitar, gaming, and spending time with my dogs. 🎸🎮🐶"
           }
         ],
         "resume": "./home.png"

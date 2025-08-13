@@ -4,7 +4,7 @@ const Blogs = () => {
   return (
     <div
       id="Blogs"
-      className="flex w-full pt-20 my-20 flex-col gap-10 px-10 overflow-hidden"
+      className="flex w-full pt-20 my-20 flex-col gap-10 md:px-10 overflow-hidden"
     >
       <div className="flex text-sm h-10 gap-5">
         <Showcase text={"My Blogs"} color={"bg-zinc-900"} />

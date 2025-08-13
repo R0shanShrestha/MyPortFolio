@@ -24,7 +24,7 @@ const Footer = ({ link }) => {
         </div>
         <div className="text-3xl flex gap-6">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/R.stha.boy"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -32,7 +32,7 @@ const Footer = ({ link }) => {
             <FaFacebook />
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/R0shanShrestha"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

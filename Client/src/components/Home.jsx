@@ -17,7 +17,7 @@ const Home = ({ nav, homesection, totalPrj }) => {
         id="home"
         className="grid grid-cols-1 md:grid-cols-2 h-full relative justify-center items-center xl:items-start"
       >
-        <section className="px-6 sm:px-10 md:px-20 flex flex-col gap-6 md:gap-10 h-fit py-10 pt-30">
+        <section className="px-1 sm:px-10 lg:px-20 flex flex-col gap-6 md:gap-10 h-fit py-10 pt-10  lg:pt-30">
           <div className="text-slate-500">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold flex items-baseline">
               <sub className="text-2xl sm:text-3xl">+</sub> {totalPrj}
@@ -31,11 +31,7 @@ const Home = ({ nav, homesection, totalPrj }) => {
               I'm {name}
             </h1>
             <p className="text-slate-600 text-xs sm:text-sm mt-4 pl-3 sm:pl-4 border-l-4 border-slate-300">
-              As a passionate Software Engineer, I specialize in building clean
-              and user-friendly web applications. By blending creativity with
-              solid technical skills, I deliver projects that not only perform
-              flawlessly but also provide engaging and intuitive user
-              experiences.
+              Full Stack Web Developer passionate about building clean, scalable, and user-friendly web applications that deliver engaging digital experiences.
             </p>
           </div>
 
