@@ -1,5 +1,5 @@
+// Navbar.jsx
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 
 const Navbar = ({ elm }) => {
@@ -9,94 +9,120 @@ const Navbar = ({ elm }) => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
-      setMobileOpen(false); // close mobile menu on click
+      setMobileOpen(false);
     }
   };
 
   return (
-    <nav className="py-3 top-0 2xl:py-8 sticky w-full left-0 flex items-center z-20 bg-white bg-opacity-90 backdrop-blur-md">
-      <div>
-        <img
-          src={elm[0].logo[0]}
-          className="w-[50px] cursor-pointer"
-          alt="logo"
-          onClick={() => handleScroll("home")}
-        />
-      </div>
-
-      {/* Desktop Menu */}
-      <div className="hidden md:flex items-center justify-between w-full px-10">
-        <ul className="flex gap-8 2xl:text-sm xl:text-[12px] cursor-pointer">
-          {elm[0].links.map((el, idx) => (
-            <li
-              key={idx}
-              id={idx}
-              onClick={() => handleScroll(el)}
-              className="cursor-pointer hover:text-blue-600 transition font-semibold"
-            >
-              <Link>{el}</Link>
-            </li>
-          ))}
-        </ul>
-        <Link
-          onClick={() => handleScroll("Let's Talk")}
-          className="flex cursor-pointer items-center gap-2 font-semibold text-slate-800 text-sm hover:font-bold transition-all duration-300"
-        >
-          {elm[0].contacts} <GoArrowUpRight />
-        </Link>
-      </div>
-
-      {/* Mobile Hamburger */}
-      <div className="md:hidden flex ml-auto px-4">
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle Menu"
-          className="focus:outline-none"
-        >
-          <svg
-            className="w-6 h-6 text-gray-800"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+    <>
+      <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 shadow-md transition-all">
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-5 md:px-10 py-4">
+          <div
+            onClick={() => handleScroll("home")}
+            className="text-2xl md:text-3xl font-bold text-gray-900 cursor-pointer hover:text-emerald-600 transition"
           >
-            {mobileOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
-      </div>
+            Roshan<span className="text-emerald-500">.</span>
+          </div>
 
-      {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="sticky top-full left-0 w-full bg-white shadow-md flex flex-col items-center py-4 md:hidden z-30">
-          <ul className="flex flex-col gap-6 text-lg font-semibold cursor-pointer">
+          {/* Desktop Links */}
+          <div className="hidden md:flex items-center gap-8">
             {elm[0].links.map((el, idx) => (
-              <li key={idx} onClick={() => handleScroll(el)}>
-                <Link>{el}</Link>
+              <span
+                key={idx}
+                onClick={() => handleScroll(el)}
+                className="text-gray-700 hover:text-emerald-500 transition font-medium cursor-pointer"
+              >
+                {el}
+              </span>
+            ))}
+            <span
+              onClick={() => handleScroll("resume")}
+              className="flex items-center gap-1 font-semibold text-gray-900 hover:text-emerald-500 cursor-pointer transition"
+            >
+              Resume <GoArrowUpRight />
+            </span>
+          </div>
+
+          {/* Mobile Hamburger */}
+          <div className="md:hidden">
+            <button onClick={() => setMobileOpen(true)}>
+              <svg
+                className="w-7 h-7 text-gray-900"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed top-0 left-0 w-full h-full z-40 bg-black/40 transition-opacity duration-300 ${
+          mobileOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setMobileOpen(false)}
+      >
+        <div
+          className={`fixed top-0 left-0 h-full w-3/4 max-w-xs bg-white shadow-xl transform transition-transform duration-300 ${
+            mobileOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="flex items-center justify-between px-6 py-4 border-b">
+            <span
+              onClick={() => handleScroll("home")}
+              className="font-bold text-xl text-gray-900 cursor-pointer hover:text-emerald-500 transition"
+            >
+              Roshan<span className="text-emerald-500">.</span>
+            </span>
+            <button onClick={() => setMobileOpen(false)}>
+              <svg
+                className="w-6 h-6 text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul className="flex flex-col gap-6 mt-6 px-6 text-lg font-medium">
+            {elm[0].links.map((el, idx) => (
+              <li
+                key={idx}
+                onClick={() => handleScroll(el)}
+                className="cursor-pointer text-gray-700 hover:text-emerald-500 transition"
+              >
+                {el}
               </li>
             ))}
-            <li onClick={() => handleScroll("Let's Talk")}>
-              <span className="flex items-center gap-2 text-slate-800 hover:font-bold">
-                {elm[0].contacts} <GoArrowUpRight />
-              </span>
+            <li
+              onClick={() => handleScroll("resume")}
+              className="flex items-center gap-1 cursor-pointer text-gray-900 hover:text-emerald-500 font-semibold transition"
+            >
+              Resume <GoArrowUpRight />
             </li>
           </ul>
         </div>
-      )}
-    </nav>
+      </div>
+    </>
   );
 };
 

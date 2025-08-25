@@ -1,5 +1,4 @@
 import React from "react";
-import { GoArrowDown } from "react-icons/go";
 import { Link } from "react-router";
 import Showcase from "./Showcase";
 
@@ -8,55 +7,36 @@ const Aboutme = ({ data }) => {
   const { para2, para3, para4 } = description[0];
 
   return (
-    <div
-      id="About Me"
-      className="h-auto min-h-screen w-full pt-20 gap-10 md:gap-20 flex flex-col md:flex-row justify-evenly px-4 md:px-10"
+    <section
+      id="AboutMe"
+      className=" w-full  flex flex-col md:flex-row items-start px-4 sm:px-6 md:px-12 py-12 gap-6"
     >
-      {/* Left Section - Image */}
-      <section className="p-2 flex flex-col items-center md:items-start flex-1">
-        <div className="flex text-sm h-10 gap-5">
-          <Showcase text="About me" color="bg-zinc-900" />
-        </div>
-        <div className="mt-6 md:mt-10 w-full max-w-xs sm:max-w-sm md:max-w-md 2xl:max-w-[500px] overflow-hidden rounded-xl shadow-xl">
-          <img
-            src={image}
-            alt="Profile"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        {/* Optional scroll prompt for mobile */}
-        {/* <div className="mt-10 font-medium flex items-center gap-3">
-          Scroll down <GoArrowDown />
-        </div> */}
-      </section>
+      <div className="flex-shrink-0 w-32 sm:w-40 md:w-48 h-32 sm:h-40 md:h-48 rounded-full overflow-hidden shadow-lg border-2 border-emerald-500 float-left md:float-none mr-4 mb-4 md:mr-6 md:mb-0">
+        <img src={image} alt="Profile" className="w-full h-full object-cover" />
+      </div>
 
-      {/* Right Section - Text */}
-      <section className="flex-1 w-full max-w-2xl pt-10 md:pt-20 px-2 md:px-6 flex flex-col gap-8 md:gap-12 font-medium">
-        <p className="text-slate-600 text-lg md:text-xl leading-relaxed">
-          <b>I’m Roshan Shrestha</b>, a passionate Full Stack Web Developer
-          dedicated to crafting clean, scalable, and user-friendly web
-          applications that bring ideas to life.
-        </p>
-        <p className="font-normal text-slate-500 text-base md:text-lg">
-          {para2}
-        </p>
-        <p className="font-normal text-slate-500 text-base md:text-lg">
-          {para3}
-        </p>
-        <p className="font-normal text-slate-500 text-base md:text-lg">
-          {para4}
-        </p>
+      <div className="flex-1 flex flex-col gap-3 md:gap-6 text-left">
+        <div className=" h-10 flex ">
+          <Showcase text="About Me" color="bg-emerald-600" />
+        </div>
 
-        {/* Resume Download */}
+        <p className="text-gray-800 text-base md:text-lg leading-relaxed">
+          <b>I’m Roshan Shrestha</b>, a Full Stack Web Developer crafting clean,
+          scalable, and user-friendly web apps.
+        </p>
+        <p className="text-gray-600 text-sm md:text-base">{para2}</p>
+        <p className="text-gray-600 text-sm md:text-base">{para3}</p>
+        <p className="text-gray-600 text-sm md:text-base">{para4}</p>
+
         <Link
           to="/resume.pdf"
           download
-          className="hover:text-blue-500 hover:font-bold hover:text-base text-sm md:text-base duration-300"
+          className="mt-3 inline-block px-4 py-2 bg-emerald-600 text-white text-sm rounded-lg hover:bg-emerald-700 transition"
         >
-          [ View Resume ]
+          View Resume
         </Link>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
