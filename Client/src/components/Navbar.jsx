@@ -15,8 +15,8 @@ const Navbar = ({ elm }) => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 shadow-md transition-all">
-        <div className="max-w-6xl mx-auto flex items-center justify-between px-5 md:px-10 py-4">
+      <nav className="fixed  top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 shadow-md transition-all">
+        <div className="   flex items-center justify-between px-5 md:px-30 py-4">
           <div
             onClick={() => handleScroll("home")}
             className="text-2xl md:text-3xl font-bold text-gray-900 cursor-pointer hover:text-emerald-600 transition"

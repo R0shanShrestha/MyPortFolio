@@ -11,8 +11,8 @@ const Aboutme = ({ data }) => {
       className=" w-full  flex flex-col md:flex-row items-start px-4 sm:px-6 md:px-12 py-12 gap-6"
     >
       <div className=" h-10 flex md:hidden ">
-          <Showcase text="About Me" color="bg-emerald-600" />
-        </div>
+        <Showcase text="About Me" color="bg-emerald-600" />
+      </div>
       <div className="flex-shrink-0 w-32 sm:w-40 md:w-48 h-32 sm:h-40 md:h-48 rounded-full overflow-hidden shadow-lg border-2 border-emerald-500 float-left md:float-none mr-4 mb-4 md:mr-6 md:mb-0">
         <img src={image} alt="Profile" className="w-full h-full object-cover" />
       </div>
@@ -33,7 +33,7 @@ const Aboutme = ({ data }) => {
         <Link
           to="/resume.pdf"
           download
-          className="mt-3 inline-block px-4 py-2 bg-emerald-600 text-white text-sm rounded-lg hover:bg-emerald-700 transition"
+          className="mt-3 w-fit border  inline-block px-4 py-2 bg-emerald-600 text-white text-sm rounded-lg hover:bg-emerald-700 transition"
         >
           View Resume
         </Link>
