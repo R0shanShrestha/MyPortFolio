@@ -2,33 +2,37 @@ import Showcase from "./Showcase";
 
 const Blogs = () => {
   return (
-    <div
+    <section
       id="Blogs"
-      className="flex w-full pt-20 my-20 flex-col gap-10 md:px-10 overflow-hidden"
+      className="w-full  flex flex-col items-center py-20 px-4 sm:px-10 md:px-20 gap-12"
     >
-      <div className="flex text-sm h-10 gap-5">
-        <Showcase text={"My Blogs"} color={"bg-zinc-900"} />
+      <div className="flex  items-center gap-4">
+        <div className="h-10 flex">
+          <Showcase text="My Blogs" color="bg-emerald-600" />
+        </div>
+        <span className="hidden sm:inline text-gray-500">
+          / Sharing ideas & stories
+        </span>
       </div>
-      <div>
-        <div className="text-center flex flex-col gap-2">
-          <h1 className="text-4xl font-semibold">
-            My Written Journey - Design Decode
-          </h1>
-          <p className="secondary text-sm">
-            Sharing insights, tips, and stories about design, creativity, and
-            growth.
+
+      <div className="flex flex-col items-center gap-6 text-center max-w-3xl">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">
+          My Written Journey - Design Decode
+        </h2>
+        <p className="text-gray-500 text-base sm:text-lg">
+          Sharing insights, tips, and stories about design, creativity, and
+          growth.
+        </p>
+
+        <div className="mt-8 p-6 bg-gray-100 rounded-xl shadow-lg border-dashed border-2 border-gray-300 animate-pulse">
+          <h3 className="text-2xl font-bold text-gray-600">Coming Soon!</h3>
+          <p className="text-gray-500 mt-2 text-sm sm:text-base">
+            Stay tuned for articles, tutorials, and tips from my journey.
           </p>
         </div>
-        <div className="text-center mt-4 font-bold text-2xl animate-pulse text-gray-500">
-          <h1 className="secondary">Coming Soon!</h1>
-        </div>
-        {/* <div className="text-center mt-6">
-          <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">
-            Notify Me
-          </button>
-        </div> */}
+
       </div>
-    </div>
+    </section>
   );
 };
 

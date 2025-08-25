@@ -9,7 +9,6 @@ const Skills = () => {
       id="Skills"
       className="w-full py-16 px-4 sm:px-10 lg:px-20 bg-gray-50"
     >
-      {/* Section Title */}
       <div className="flex justify-center h-10 font-bold mb-12">
         <Showcase text="Skills" color="bg-emerald-600" />
       </div>

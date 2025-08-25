@@ -12,17 +12,13 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setSuccessMsg("Message sent successfully!");
     setFormData({ fullName: "", contactNo: "", email: "", message: "" });
-
     setTimeout(() => {
       setSuccessMsg("");
       setShowModal(false);
@@ -30,25 +26,25 @@ const Contact = () => {
   };
 
   return (
-    <div
-      id="Let's Talk"
-      className="w-full pt-20 flex flex-col items-center my-12 px-4 sm:px-10"
+    <section
+      id="Contact"
+      className="w-full py-20 px-4 sm:px-10 md:px-20 flex flex-col items-center gap-12"
     >
-      <div className="flex text-sm h-10 gap-5">
-        <Showcase text={"Contact Me"} color={"bg-slate-900"} />
+      <div className="flex   gap-4 h-10">
+        <Showcase text="Contact Me" color="bg-emerald-600" />
       </div>
 
-      <div className="min-w-full max-w-md p-5 text-center flex flex-col items-center gap-5">
-        <h1 className="lg:text-3xl font-bold">
+      <div className="text-center max-w-xl flex flex-col gap-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
           Have a vision? Let's make it happen!
-        </h1>
-        <p className="text-center font-medium text-sm max-w-full px-4">
-          I love teaming up on fresh, creative projects - whether you're just
-          getting started or looking to improve something you already have.
+        </h2>
+        <p className="text-gray-500 text-sm sm:text-base">
+          I love collaborating on creative projects — whether you're starting
+          fresh or improving an existing idea.
         </p>
         <button
           onClick={() => setShowModal(true)}
-          className="bg-slate-700 p-3 rounded-xl text-white px-10 cursor-pointer hover:bg-slate-600"
+          className="mt-4 px-8 py-3 bg-emerald-600 text-white font-semibold rounded-xl hover:bg-emerald-700 transition-all shadow-lg"
         >
           Invite
         </button>
@@ -56,35 +52,40 @@ const Contact = () => {
 
       {/* Modal */}
       {showModal && (
-        <div
-          className="fixed inset-0 bg-white bg-opacity-30 backdrop-blur-md flex items-center justify-center z-50 p-4"
-        >
-          <div className="bg-white bg-opacity-90 rounded-xl p-6 max-w-md w-full shadow-lg">
-            <h2 className="text-xl font-bold mb-4">Contact Me</h2>
+        <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
+          <div
+            className="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-md"
+            onClick={() => setShowModal(false)}
+          ></div>
+
+          <div className="relative w-full max-w-md p-8 rounded-3xl bg-white/20 backdrop-blur-xl border border-white/30 shadow-lg animate-fadeIn">
+            <h3 className="text-2xl font-bold mb-6 text-center text-gray-900">
+              Send a Message
+            </h3>
 
             {successMsg ? (
-              <p className="text-green-600 font-semibold text-center">
+              <p className="text-green-600 font-semibold text-center text-lg">
                 {successMsg}
               </p>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 <input
                   type="text"
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleChange}
-                  placeholder="Full name"
+                  placeholder="Full Name"
                   required
-                  className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-700"
+                  className="bg-white/40 backdrop-blur-sm border border-white/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
                 />
                 <input
                   type="tel"
                   name="contactNo"
                   value={formData.contactNo}
                   onChange={handleChange}
-                  placeholder="Contact no"
+                  placeholder="Contact No"
                   required
-                  className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-700"
+                  className="bg-white/40 backdrop-blur-sm border border-white/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
                 />
                 <input
                   type="email"
@@ -93,28 +94,29 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Email"
                   required
-                  className="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-700"
+                  className="bg-white/40 backdrop-blur-sm border border-white/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
                 />
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Message"
-                  rows={4}
+                  rows={5}
                   required
-                  className="border border-gray-300 rounded px-3 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-slate-700"
+                  className="bg-white/40 backdrop-blur-sm border border-white/50 rounded-xl px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-emerald-600 transition"
                 ></textarea>
-                <div className="flex justify-between items-center">
+
+                <div className="flex justify-between items-center gap-4">
                   <button
                     type="submit"
-                    className="bg-slate-700 text-white px-6 py-2 rounded hover:bg-slate-600 transition"
+                    className="flex-1 bg-emerald-600 text-white px-6 py-3 rounded-xl hover:bg-emerald-700 transition font-semibold"
                   >
                     Submit
                   </button>
                   <button
                     type="button"
                     onClick={() => setShowModal(false)}
-                    className="text-gray-600 hover:text-gray-900"
+                    className="flex-1 border border-white/50 text-white px-6 py-3 rounded-xl hover:bg-white/20 transition font-medium"
                   >
                     Cancel
                   </button>
@@ -124,7 +126,7 @@ const Contact = () => {
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
