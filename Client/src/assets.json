@@ -32,9 +32,16 @@
       {
         "webproject": [
           {
+            "img": "./projects/medibook.png",
+            "link": "https://medibook-ten.vercel.app/",
+            "desc": "Book doctors easily, manage appointments, and access healthcare at your fingertips. I’ve built MediBook with React, Node, and MongoDB – and I’d love your feedback & contributions to make it even better! 💡✨",
+            "status": true
+          },
+          {
             "img": "./projects/portfolio.png",
-            "link": "#",
-            "desc": "Roshan Newar, crafting innovative web solutions that merge creativity, functionality, and precision into seamless experiences."
+            "link": "https://roshanshrestha.vercel.app/",
+            "desc": "Roshan Newar, crafting innovative web solutions that merge creativity, functionality, and precision into seamless experiences.",
+            "status": true
           },
           {
             "img": "./projects/looksy.png",
