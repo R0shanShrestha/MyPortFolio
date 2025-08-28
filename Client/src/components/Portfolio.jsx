@@ -37,7 +37,7 @@ const Portfolio = ({ setTotalPrj }) => {
               <img
                 src={pr.img}
                 alt={pr.desc}
-                className="h-60 w-full object-cover object-top transition-transform duration-300 group-hover:scale-110"
+                className="h-60 w-full object-cover  object-left transition-transform duration-300 group-hover:scale-110"
               />
             </div>
             <p className="mt-2 text-center text-sm text-gray-600">{pr.desc}</p>
