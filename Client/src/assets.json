@@ -47,7 +47,7 @@
             "img": "./projects/looksy.png",
             "link": "https://looksy-8tlv.vercel.app/",
             "desc": "Discover endless creativity with Looksy — high-quality images to spark ideas and inspire your vision.",
-            "status": true
+            "status": "maintains"
           },
           {
             "img": "./projects/studybuddy.png",
@@ -70,32 +70,7 @@
         ]
       }
     ],
-    "blogs": [
-      {
-        "img": "./home.png",
-        "category": "Design",
-        "postat": "1 min ago",
-        "desc": "Exploring design and creativity powered by artificial intelligence. "
-      },
-      {
-        "img": "./home.png",
-        "category": "Design",
-        "postat": "1 min ago",
-        "desc": "Exploring design and creativity powered by artificial intelligence. "
-      },
-      {
-        "img": "./home.png",
-        "category": "Design",
-        "postat": "1 min ago",
-        "desc": "Exploring design and creativity powered by artificial intelligence. "
-      },
-      {
-        "img": "./src/home.png",
-        "category": "Design",
-        "postat": "1 min ago",
-        "desc": "Exploring design and creativity powered by artificial intelligence. "
-      }
-    ],
+    "blogs": [],
     "skills": [
       {
         "name": "html",

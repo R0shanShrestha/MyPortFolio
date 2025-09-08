@@ -60,15 +60,21 @@ const Portfolio = ({ setTotalPrj }) => {
             className="group transform transition-all duration-300 hover:scale-105"
           >
             <div className="relative overflow-hidden rounded-xl shadow-lg">
-              {pr.status && (
-                <div className="absolute top-2 left-2 z-10">
+              {pr.status == true ? (
+                <div className="absolute top-2 left-2 z-10 h-[30px] flex">
                   <Showcase color="bg-green-400" text="Live" />
                 </div>
+              ) : (
+                pr.status == "maintains" && (
+                  <div className="absolute top-2 left-2 z-10 h-[30px] flex">
+                    <Showcase color="bg-yellow-400" text="Under maintenance" />
+                  </div>
+                )
               )}
               <img
                 src={pr.img}
                 alt={pr.desc}
-                className="h-60 w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                className="h-60 w-full object-contain object-center transition-transform duration-500 group-hover:scale-110"
               />
             </div>
             <p className="mt-2 text-center text-sm text-gray-700 font-medium group-hover:text-gray-900 transition">
