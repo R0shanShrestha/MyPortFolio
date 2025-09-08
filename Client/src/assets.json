@@ -9,7 +9,7 @@
     ],
     "homesection": [
       {
-        "name": "Roshan Newar",
+        "name": "Roshan Shrestha",
         "userimg": ["./user1.png", "./biguser.png"],
         "projectcompleted": 15
       }
@@ -19,10 +19,10 @@
         "image": "./biguser.png",
         "description": [
           {
-            "para1": "I’m Roshan Shrestha, a Full Stack Developer passionate about building useful web apps like Study Buddy. 💻✨",
-            "para2": "With 4 years in web development and design, I focus on AI/ML, coding, and mentoring future tech talents. 🤖🚀",
-            "para3": "Currently, I’m diving deeper into AI/ML with Python while creating intuitive, impactful web apps. 🐍💡",
-            "para4": "Beyond tech, I enjoy playing guitar, gaming, and spending time with my dogs. 🎸🎮🐶"
+            "para1": "I’m Roshan Shrestha, a Full Stack Developer passionate about building practical and impactful web applications like Study Buddy. 💻✨",
+            "para2": "With 4 years of experience in web development and design, I focus on AI-integrated applications 🤖, coding 💻, and mentoring future tech talent 🚀.",
+            "para3": "Currently, I’m exploring AI-integrated applications and deepening my expertise in Python 🐍, crafting intuitive and high-impact web solutions 💡.",
+            "para4": "Beyond technology, I enjoy playing guitar 🎸, gaming 🎮, and spending quality time with my dogs 🐶."
           }
         ],
         "resume": "./home.png"
