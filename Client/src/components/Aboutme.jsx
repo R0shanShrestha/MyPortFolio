@@ -109,7 +109,7 @@ const Aboutme = ({ data }) => {
           {/* Resume Button */}
           <div ref={buttonRef} className="flex justify-center md:justify-start">
             <Link
-              to="/resume.pdf"
+              to="https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
               download
               className="px-6 py-2 bg-emerald-600 text-white text-sm md:text-base rounded-full shadow hover:bg-emerald-700 transition transform hover:scale-105"
             >

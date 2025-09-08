@@ -1,6 +1,7 @@
 // Navbar.jsx
 import React, { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from "react-router";
 
 const Navbar = ({ elm }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -35,12 +36,14 @@ const Navbar = ({ elm }) => {
                 {el}
               </span>
             ))}
-            <span
-              onClick={() => handleScroll("resume")}
-              className="flex items-center gap-1 font-semibold text-gray-900 hover:text-emerald-500 cursor-pointer transition"
+            <Link
+              to={
+                "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
+              }
+              className="flex items-center gap-1 cursor-pointer text-gray-900 hover:text-emerald-500 font-semibold transition"
             >
               Resume <GoArrowUpRight />
-            </span>
+            </Link>
           </div>
 
           {/* Mobile Hamburger */}
@@ -113,12 +116,14 @@ const Navbar = ({ elm }) => {
                 {el}
               </li>
             ))}
-            <li
-              onClick={() => handleScroll("resume")}
+            <Link
+              to={
+                "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
+              }
               className="flex items-center gap-1 cursor-pointer text-gray-900 hover:text-emerald-500 font-semibold transition"
             >
               Resume <GoArrowUpRight />
-            </li>
+            </Link>
           </ul>
         </div>
       </div>
