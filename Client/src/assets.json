@@ -44,6 +44,12 @@
             "status": true
           },
           {
+            "img": "./projects/miniworld.png",
+            "link": "https://3dworld-ashy.vercel.app/",
+            "desc": "Discover endless creativity with Looksy — high-quality images to spark ideas and inspire your vision.",
+            "status": true
+          },
+          {
             "img": "./projects/looksy.png",
             "link": "https://looksy-8tlv.vercel.app/",
             "desc": "Discover endless creativity with Looksy — high-quality images to spark ideas and inspire your vision.",

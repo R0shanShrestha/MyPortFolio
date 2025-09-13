@@ -100,7 +100,7 @@ const Home = ({ nav, homesection, totalPrj }) => {
           <img
             src={homesection[0].userimg[1]}
             alt="Profile"
-            className="w-full h-auto max-w-md sm:max-w-lg md:max-w-full rounded-xl shadow-xl"
+            className="w-full h-auto max-w-md sm:max-w-lg md:max-w-full rounded-xl "
           />
         </section>
       </div>
