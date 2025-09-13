@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { Link } from "react-router";
+import data from "../assets.json";
 
 const Navbar = ({ elm }) => {
+  const resumeLink = data[0].nav[0].resumeLink;
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleScroll = (id) => {
@@ -37,9 +39,7 @@ const Navbar = ({ elm }) => {
               </span>
             ))}
             <Link
-              to={
-                "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
-              }
+              to={resumeLink}
               className="flex items-center gap-1 cursor-pointer text-gray-900 hover:text-emerald-500 font-semibold transition"
             >
               Resume <GoArrowUpRight />
@@ -117,9 +117,7 @@ const Navbar = ({ elm }) => {
               </li>
             ))}
             <Link
-              to={
-                "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
-              }
+              to={resumeLink}
               className="flex items-center gap-1 cursor-pointer text-gray-900 hover:text-emerald-500 font-semibold transition"
             >
               Resume <GoArrowUpRight />

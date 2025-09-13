@@ -4,7 +4,8 @@
       {
         "logo": ["./logo.png"],
         "links": ["About Me", "Portfolio", "Blogs"],
-        "contacts": ["Let's Talk"]
+        "contacts": ["Let's Talk"],
+        "resumeLink": "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
       }
     ],
     "homesection": [
@@ -25,7 +26,7 @@
             "para4": "Beyond technology, I enjoy playing guitar 🎸, gaming 🎮, and spending quality time with my dogs 🐶."
           }
         ],
-        "resume": "./home.png"
+        "resume": "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
       }
     ],
     "portfolio": [
