@@ -27,6 +27,9 @@ const NavLinks = ({ setOpen, handleScroll }) => {
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false); // closed by default
   const nav = useRef();
+  const [tab, settab] = useState(
+    window.localStorage.getItem("tab") ? window.localStorage.getItem("tab") : ""
+  );
 
   const handleScroll = (id) => {
     const el = document.getElementById(id);
@@ -47,16 +50,49 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className="px-5 py-10 md:px-10 lg:px-20 relative w-full "  id="home">
+    <div className="px-5 py-10 md:px-10 lg:px-20 relative w-full  " id="home">
       <div className="flex items-center justify-between">
-        <h1 className="font-bold flex gap-2 text-2xl">
-          <span className="primaryColor">//</span>Roshan
+        <h1 className="font-bold flex text-2xl">
+          Roshan
+          <span className="text-emerald-600">.</span>
         </h1>
         <FaHamburger
           onClick={() => setOpen(true)}
           size={24}
-          className="hover:rotate-y-180 hover:text-green-400 cursor-pointer duration-500"
+          className="hover:rotate-y-180 lg:hidden hover:text-green-400 cursor-pointer duration-500"
         />
+
+        {/* desktop */}
+        <div className=" text-white   hidden lg:flex border w-[500px]  rounded-2xl overflow-hidden items-center justify-around text-sm">
+          {data.nav.links.map((lik) => {
+            return (
+              <span
+                key={lik}
+                onClick={() => {
+                  settab(lik);
+                  handleScroll(lik);
+                  window.localStorage.setItem("tab", lik);
+                }}
+                className={` cursor-pointer duration-300  w-full text-center py-2  hover:text-emerald-500 hover:font-semibold uppercase ${
+                  tab == lik
+                    ? "text-emerald-500 font-bold bgPrimaryColor px-2"
+                    : "text-white"
+                }`}
+              >
+                {lik}
+              </span>
+            );
+          })}
+        </div>
+        <div>
+          <a
+            href="#"
+            className="font-semibold px-5 flex items-center gap-3 text-sm bg-green-700 p-2.5 rounded-2xl"
+          >
+            {data.nav.contacts}
+            <GoArrowUpRight />
+          </a>
+        </div>
       </div>
 
       <div

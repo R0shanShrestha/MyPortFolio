@@ -13,7 +13,7 @@ const App = () => {
     <div className="no-scroller h-screen bg-black text-white  overflow-x-hidden">
       
       {/* Navbar */}
-      <Navbar className='hi' />
+      <Navbar/>
 
       {/* Hero */}
       <Home  />

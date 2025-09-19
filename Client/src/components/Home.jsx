@@ -47,7 +47,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="px-5 md:px-10 lg:px-20 text-neutral-400 py-10 flex flex-col gap-20 ">
+    <main className="px-5 md:px-10 lg:mt-20 lg:px-20 text-neutral-400 py-10 flex flex-col gap-20 ">
       <div className="relative flex flex-col gap-10 md:flex-row-reverse  md:justify-end w-full">
         {/* image */}
         <div className="flex flex-col items-center md:items-start lg:px-20 img ">
@@ -69,7 +69,7 @@ const Home = () => {
           {/* Social links */}
           <h1 className="flex gap-5 text-sm">
             {media.map((lik) => (
-              <a href={lik.link} className="flex gap-1 lik font-semibold">
+              <a key={lik.name} href={lik.link} className="flex gap-1 lik font-semibold">
                 <span className="primaryColor">/</span>
                 {lik.name}
               </a>
