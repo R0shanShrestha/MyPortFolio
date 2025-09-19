@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="no-scroller h-screen bg-black/85 text-white  overflow-x-hidden">
       <video
-        src="../public/video/bg.mp4"
+        src={data.homesection.backgroundVideo}
         className="fixed top-0 left-0 -z-10 w-screen h-screen object-cover"
         muted
         autoPlay

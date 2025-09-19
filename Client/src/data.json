@@ -9,6 +9,7 @@
   "homesection": {
     "name": "Roshan Shrestha",
     "userimg": ["./user1.png", "./biguser.png"],
+    "backgroundVideo": "./video/bg.mp4",
     "projectcompleted": 8,
     "experience": 3
   },

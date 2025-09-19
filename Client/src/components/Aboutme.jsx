@@ -7,7 +7,6 @@ import data from "../data.json";
 const Aboutme = () => {
   const { image, description } = data.aboutme;
   const { para2, para3, para4 } = description[0];
-  console.log(description);
 
   // Refs for animations
   const sectionRef = useRef(null);
@@ -29,7 +28,7 @@ const Aboutme = () => {
         scale: 0.8,
         duration: 1,
         delay: 0.3,
-        ease: "back.out(1.7)",
+        ease: "back.out",
       });
 
       gsap.from(textRef.current.children, {
