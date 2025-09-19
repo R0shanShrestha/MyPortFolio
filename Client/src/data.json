@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "logo": ["./logo.png"],
+    "links": ["About Me", "Portfolio", "Blogs"],
+    "contacts": ["Let's Talk"],
+    "resumeLink": "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
+  },
+
+  "homesection": {
+    "name": "Roshan Shrestha",
+    "userimg": ["./user1.png", "./biguser.png"],
+    "projectcompleted": 15
+  },
+  "aboutme": {
+    "image": "./biguser.png",
+    "description": [
+      {
+        "para1": "I’m Roshan Shrestha, a Full Stack Developer passionate about building practical and impactful web applications like Study Buddy. 💻✨",
+        "para2": "With 4 years of experience in web development and design, I focus on AI-integrated applications 🤖, coding 💻, and mentoring future tech talent 🚀.",
+        "para3": "Currently, I’m exploring AI-integrated applications and deepening my expertise in Python 🐍, crafting intuitive and high-impact web solutions 💡.",
+        "para4": "Beyond technology, I enjoy playing guitar 🎸, gaming 🎮, and spending quality time with my dogs 🐶."
+      }
+    ],
+    "resume": "https://drive.google.com/file/d/1IWMQ-X213kY-PKip4Ja03eqsBqmXqYTU/view?usp=sharing"
+  },
+  "portfolio": {
+    "webproject": [
+      {
+        "title": "Iphone Redesign",
+        "img": "./projects/iphoneredesign.png",
+        "link": "https://iphoneredesign.vercel.app/",
+        "subtitle": "A modern take on Apple's iPhone interface.",
+        "status": "live"
+      },
+      {
+        "title": "MediBook",
+        "img": "./projects/medibook.png",
+        "link": "https://medibook-ten.vercel.app/",
+        "subtitle": "Book doctors easily, manage appointments, and access healthcare at your fingertips",
+        "status": "live"
+      },
+      {
+        "title": "Roshan Shrestha",
+        "img": "./projects/portfolio.png",
+        "link": "https://roshanshrestha.vercel.app/",
+        "subtitle": "My portfolio",
+        "status": "live"
+      },
+      {
+        "title": "3D Moveable Object",
+        "img": "./projects/miniworld.png",
+        "link": "https://3dworld-ashy.vercel.app/",
+        "subtitle": "Discover endless creativity with Me.",
+        "status": "live"
+      },
+      {
+        "title": "Looksy",
+        "img": "./projects/looksy.png",
+        "link": "https://looksy-8tlv.vercel.app/",
+        "subtitle": "Discover endless creativity with Looksy.",
+        "status": "maintains"
+      },
+      {
+        "title": "Study Buddy",
+        "img": "./projects/studybuddy.png",
+        "link": "https://study-buddy-ai-lac.vercel.app/",
+        "subtitle": "Study Buddy: Your AI Partner for Smarter Learning Success 📚🤖",
+        "status": "live"
+      }
+    ]
+  },
+  "blogs": [],
+  "skills": [
+    {
+      "name": "html",
+      "img": "./src/html.png"
+    },
+    {
+      "name": "css",
+      "img": "./src/css.png"
+    },
+    {
+      "name": "js",
+      "img": "./src/js.png"
+    },
+    {
+      "name": "node",
+      "img": "./src/node.png"
+    },
+    {
+      "name": "mongo",
+      "img": "./src/mongo.png"
+    },
+    {
+      "name": "mysql",
+      "img": "./src/mysql.png"
+    },
+    {
+      "name": "react",
+      "img": "./src/react.png"
+    },
+    {
+      "name": "python",
+      "img": "./src/python.png"
+    }
+  ]
+}

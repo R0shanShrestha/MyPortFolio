@@ -9,7 +9,7 @@ import {
 import { DiMongodb } from "react-icons/di";
 import { SiMysql } from "react-icons/si";
 
-export const skills = [
+export const SKill = [
   {
     icon: FaHtml5,
     skillName: "HTML",

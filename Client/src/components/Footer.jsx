@@ -8,7 +8,7 @@ const Footer = ({ link }) => {
   };
 
   return (
-    <footer className="w-full py-10 bg-zinc-900 bg-opacity-90 backdrop-blur-md text-white px-6 sm:px-10">
+    <footer className="w-full py-10 bg-zinc-950 bg-opacity-90 backdrop-blur-md text-white px-6 sm:px-10">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Navigation */}
         <ul className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm md:text-base items-center">
@@ -18,7 +18,7 @@ const Footer = ({ link }) => {
           >
             Home
           </li>
-          {link[0].links.map((el, idx) => (
+          {link.map((el, idx) => (
             <li
               key={idx}
               onClick={() => handleScroll(el)}

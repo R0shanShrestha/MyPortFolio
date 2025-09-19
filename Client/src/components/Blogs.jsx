@@ -4,22 +4,22 @@ const Blogs = () => {
   return (
     <section
       id="Blogs"
-      className="w-full  flex flex-col items-center py-20 px-4 sm:px-10 md:px-20 gap-12"
+      className="w-fit mx-auto   flex flex-col items-center py-20 px-4 sm:px-10 md:px-20 gap-12"
     >
       <div className="flex  items-center gap-4">
-        <div className="h-10 flex">
+        <div className=" flex">
           <Showcase text="My Blogs" color="bg-emerald-600" />
         </div>
-        <span className="hidden sm:inline text-gray-500">
+        <span className="hidden sm:inline text-gray-200">
           / Sharing ideas & stories
         </span>
       </div>
 
       <div className="flex flex-col items-center gap-6 text-center max-w-3xl">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold ">
           My Written Journey - Design Decode
         </h2>
-        <p className="text-gray-500 text-base sm:text-lg">
+        <p className="text-gray-300 text-base sm:text-lg">
           Sharing insights, tips, and stories about design, creativity, and
           growth.
         </p>
@@ -30,7 +30,6 @@ const Blogs = () => {
             Stay tuned for articles, tutorials, and tips from my journey.
           </p>
         </div>
-
       </div>
     </section>
   );
