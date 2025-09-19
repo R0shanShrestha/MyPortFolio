@@ -5,9 +5,19 @@ import { ScrollTrigger } from "gsap/all";
 import Showcase from "./Showcase";
 gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
-  const media = ["Instagram", "Github", "Facebook"];
+  const media = [
+    { name: "Instagram", link: "https://www.instagram.com/ro_sh_an_st_ha/" },
+    { name: "Github", link: "https://github.com/R0shanShrestha" },
+    { name: "Facebook", link: "https://www.facebook.com/iAmRoshanShrestha" },
+  ];
   useGSAP(() => {
     const tl = gsap.timeline();
+    gsap.from(".img", {
+      display: "none",
+      opacity: 0,
+      duration: 0.8,
+      ease: "power1",
+    });
     tl.from(".hero", {
       opacity: 0,
       duration: 1,
@@ -23,16 +33,11 @@ const Home = () => {
 
     tl.from(".about", {
       opacity: 0,
-      duration: 0.5,
+      duration: 0.2,
       ease: "power1",
       y: 300,
     });
-    tl.from(".img", {
-      display: "none",
-      opacity: 0,
-      duration: 0.8,
-      ease: "power1",
-    });
+
     tl.from(".success", {
       opacity: 0,
       ease: "power1",
@@ -42,7 +47,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="px-5 md:px-10 lg:px-20 text-neutral-400 py-10 flex flex-col gap-20 " >
+    <main className="px-5 md:px-10 lg:px-20 text-neutral-400 py-10 flex flex-col gap-20 ">
       <div className="relative flex flex-col gap-10 md:flex-row-reverse  md:justify-end w-full">
         {/* image */}
         <div className="flex flex-col items-center md:items-start lg:px-20 img ">
@@ -57,16 +62,16 @@ const Home = () => {
         </div>
         {/* Hero text */}
         <div className=" flex flex-col gap-8 hero">
-          <Showcase text={"4 Year Experience"} />
+          <Showcase text={`${data.homesection.experience} Year Experience`} />
           <h1 className="Bigtext text-5xl md:text-7xl lg:text-8xl md:leading-22 text-white">
             Building Fast, <br /> Scable, and <br /> Secure website
           </h1>
           {/* Social links */}
           <h1 className="flex gap-5 text-sm">
             {media.map((lik) => (
-              <a href="www.google.com" className="flex gap-1 lik font-semibold">
+              <a href={lik.link} className="flex gap-1 lik font-semibold">
                 <span className="primaryColor">/</span>
-                {lik}
+                {lik.name}
               </a>
             ))}
           </h1>
@@ -86,14 +91,18 @@ const Home = () => {
         <Showcase text={"Success & Achievements"} />
         <div className="flex gap-20 px-5">
           <div className="flex flex-col gap-3 items-center">
-            <span className="text-5xl font-bold">{8}</span>
+            <span className="text-5xl font-bold">
+              {data.homesection.projectcompleted}
+            </span>
             <span className="text-xs">
               Completed <br />
               Projects
             </span>
           </div>
           <div className="flex flex-col gap-3 items-center">
-            <span className="text-5xl font-bold">3</span>
+            <span className="text-5xl font-bold">
+              {data.homesection.experience}
+            </span>
             <span className="text-xs">
               Year in <br />
               Development

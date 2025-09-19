@@ -9,7 +9,8 @@
   "homesection": {
     "name": "Roshan Shrestha",
     "userimg": ["./user1.png", "./biguser.png"],
-    "projectcompleted": 15
+    "projectcompleted": 8,
+    "experience": 3
   },
   "aboutme": {
     "image": "./biguser.png",

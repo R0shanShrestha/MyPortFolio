@@ -6,30 +6,38 @@ import Aboutme from "./components/Aboutme";
 import Skills from "./components/Skills";
 import Blogs from "./components/Blogs";
 import Footer from "./components/Footer";
-import data from "./data.json"
+import data from "./data.json";
 const App = () => {
+  
   return (
-    <div className="no-scroller h-screen bg-black text-white  overflow-x-hidden">
+    <div className="no-scroller h-screen bg-black/85 text-white  overflow-x-hidden">
+      <video
+        src="../public/video/bg.mp4"
+        className="fixed top-0 left-0 -z-10"
+        muted
+        autoPlay
+        loop
+      />
       {/* Navbar */}
-      <Navbar />
+      <Navbar className='hi' />
 
       {/* Hero */}
-      <Home />
+      <Home  />
 
       {/* My Works */}
-      <Works />
+      <Works  />
 
       {/* About me */}
-      <Aboutme />
+      <Aboutme  />
 
       {/* Skills */}
-      <Skills />
+      <Skills  />
 
       {/* Block */}
-      <Blogs/>
+      <Blogs />
 
       {/* Footer */}
-      <Footer link={data.nav.links}/>
+      <Footer link={data.nav.links} />
     </div>
   );
 };

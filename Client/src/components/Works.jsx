@@ -14,14 +14,24 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Works = () => {
- 
+  useGSAP(() => {
+    const tl = gsap.timeline();
+    tl.from("#Portfolio", {
+      opacity: 0,
+      duration: 3,
+      ease: "power1.in",
+    });
+  }, []);
   return (
-    <div className=" gap-10 flex flex-col px-5 md:px-10 lg:px-20 pt-30"  id="Portfolio">
+    <div
+      className=" gap-10 flex flex-col px-5 md:px-10 lg:px-20 pt-30"
+      id="Portfolio"
+    >
       <div className="headerx">
         <Showcase text="Explore my works" />
       </div>
 
-      <div className="pt-10 gap-10 flex w-full" >
+      <div className="pt-10 gap-10 flex w-full">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
