@@ -10,14 +10,8 @@ import data from "./data.json";
 const App = () => {
   
   return (
-    <div className="no-scroller h-screen bg-black/85 text-white  overflow-x-hidden">
-      <video
-        src={data.homesection.backgroundVideo}
-        className="fixed top-0 left-0 -z-10 w-screen h-screen object-cover"
-        muted
-        autoPlay
-        loop
-      />
+    <div className="no-scroller h-screen bg-black text-white  overflow-x-hidden">
+      
       {/* Navbar */}
       <Navbar className='hi' />
 
