@@ -58,7 +58,7 @@ const Home = () => {
         {/* Hero text */}
         <div className=" flex flex-col gap-8 hero">
           <Showcase text={"4 Year Experience"} />
-          <h1 className="Bigtext text-5xl md:text-7xl lg:text-8xl md:leading-22">
+          <h1 className="Bigtext text-5xl md:text-7xl lg:text-8xl md:leading-22 text-white">
             Building Fast, <br /> Scable, and <br /> Secure website
           </h1>
           {/* Social links */}
