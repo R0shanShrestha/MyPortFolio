@@ -84,7 +84,7 @@ const Navbar = () => {
             );
           })}
         </div>
-        <div>
+        <div className="hidden lg:block">
           <a
             href="#"
             className="font-semibold px-5 flex items-center gap-3 text-sm bg-green-700 p-2.5 rounded-2xl"
