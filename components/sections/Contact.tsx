@@ -19,18 +19,18 @@ type FormValues = z.infer<typeof formSchema>;
 
 const socialLinks = [
   {
-    label: "roshan@example.com",
-    href: "mailto:roshan@example.com",
+    label: "roshanstha401@gmail.com",
+    href: "mailto:roshanstha401@gmail.com",
     Icon: Mail,
   },
   {
-    label: "github.com/roshan",
-    href: "https://github.com/roshan",
+    label: "github.com/R0shanShrestha",
+    href: "https://github.com/R0shanShrestha",
     Icon: SiGithub,
   },
   {
-    label: "linkedin.com/in/roshan-shrestha",
-    href: "https://linkedin.com/in/roshan-shrestha",
+    label: "linkedin.com/in/roshan-shrestha-4aa2b62b8",
+    href: "https://linkedin.com/in/roshan-shrestha-4aa2b62b8",
     Icon: Linkedin,
   },
 ];

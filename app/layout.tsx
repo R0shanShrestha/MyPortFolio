@@ -4,9 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
   title: "Roshan Shrestha — Full Stack Developer",
-  icons: {
-    icon: "assets/logo/favicon.ico",
-  },
+  icons: "/assets/logo/ico.png",
   description:
     "Full Stack Developer building modern web applications and business websites focused on performance, usability, and clean UI.",
   keywords: [
