@@ -1,13 +1,11 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import HeroScene from "../three/HeroScene";
 
-const HeroScene = dynamic(() => import("@/components/three/HeroScene"), {
-  ssr: false,
-  loading: () => null,
-});
+
+
 
 const scrollTo = (id: string) =>
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });

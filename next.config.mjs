@@ -1,8 +1,18 @@
-// Rename to next.config.mjs
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["three"],
+  transpilePackages: [
+    "three",
+    "@react-three/fiber",
+    "@react-three/drei",
+  ],
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      react: "react",
+      "react-dom": "react-dom",
+    };
+    return config;
+  },
 };
 
 export default nextConfig;
