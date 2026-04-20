@@ -8,31 +8,45 @@ const projects = [
     id: "tea-hub",
     number: "01",
     title: "Tea Hub",
+    image: "/assets/projects/teahub.png",
     description:
       "A business website for a specialty tea retailer — clean product catalog, ordering system, and brand-forward design optimised for conversions.",
     tags: ["Next.js", "Tailwind CSS", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://teahub-mr1r.vercel.app/",
+    githubUrl: "https://github.com/R0shanShrestha/Teahub",
   },
   {
     id: "medibook",
     number: "02",
     title: "MediBook",
+    image: "/assets/projects/medibook.png",
     description:
       "A full-stack appointment booking system for healthcare providers. Patients can schedule, reschedule, and manage appointments with real-time availability.",
     tags: ["React", "Node.js", "MongoDB", "Express"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://medibook-ten.vercel.app/",
+    githubUrl: "https://github.com/R0shanShrestha/medibook",
   },
   {
     id: "looksy",
     number: "03",
     title: "Looksy",
+    image: "/assets/projects/looksy.png",
     description:
       "A web application for discovering and sharing style inspiration. Features curated feeds, user collections, and a responsive, image-first interface.",
     tags: ["React", "Tailwind CSS", "Node.js"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://looksy-8tlv.vercel.app/",
+    githubUrl: "https://github.com/R0shanShrestha/looksy",
+  },
+  {
+    id: "iphoneredesign",
+    number: "04",
+    title: "iPhone Redesign",
+    image: "/assets/projects/iphone.png",
+    description:
+      "A modern redesign of the iPhone interface with enhanced usability and aesthetic appeal.",
+    tags: ["React", "Tailwind CSS", "Node.js"],
+    liveUrl: "https://iphoneredesign.vercel.app/",
+    githubUrl: "https://github.com/R0shanShrestha/IphoneMockup",
   },
 ];
 
@@ -70,12 +84,14 @@ export default function ProjectsSection() {
               className="group grid md:grid-cols-12 gap-8 md:gap-12 items-center"
             >
               {/* Visual */}
-              <div className="md:col-span-7 order-2 md:order-none">
+              <div className="md:col-span-7  order-2 md:order-none">
                 <div className="relative aspect-[16/9] rounded-xl border border-[#1e2d3d] bg-gradient-to-br from-[#0f1520] to-[#080c10] overflow-hidden transition-all duration-500 group-hover:border-[#2dd4bf]/25">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="font-mono text-5xl font-bold text-white/5 group-hover:text-white/10 transition-colors duration-700 select-none">
-                      {project.number}
-                    </span>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="font-mono text-5xl font-bold text-white/5 group-hover:text-white/10 transition-colors duration-700 select-none object-cover object-center w-full h-full"
+                    />
                   </div>
                   <div className="absolute inset-0 flex items-end p-6">
                     <span className="font-bold text-2xl text-white/15 group-hover:text-white/30 transition-colors duration-500">
