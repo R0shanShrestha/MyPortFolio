@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Roshan Shrestha — Portfolio
 
 A modern, production-ready personal portfolio website built with **Next.js 14 App Router**, **Tailwind CSS**, **Three.js**, and **Framer Motion**.
@@ -61,3 +62,6 @@ Update your details in these files:
 | Social links, email | `components/sections/Contact.tsx` |
 | SEO metadata | `app/layout.tsx` |
 | Colors, fonts | `tailwind.config.ts`, `app/globals.css` |
+=======
+
+>>>>>>> bf248e5e36459c52b5830327e8c83fb93169f6fb
