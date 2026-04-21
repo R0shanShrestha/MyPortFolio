@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDown, ArrowUpRight, MapPin, Mail } from "lucide-react";
-import { SiGithub, SiLinkedin, SiReact, SiNextdotjs, SiNodedotjs, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { ArrowDown, ArrowUpRight, MapPin, Mail, Github, Linkedin } from "lucide-react";
+import { SiReact, SiNextdotjs, SiNodedotjs, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -35,8 +35,8 @@ const marqueeStack = [
 ];
 
 const socialRail = [
-  { label: "GitHub", href: "https://github.com/R0shanShrestha", Icon: SiGithub },
-  { label: "LinkedIn", href: "https://linkedin.com/in/roshan-shrestha-4aa2b62b8", Icon: SiLinkedin },
+  { label: "GitHub", href: "https://github.com/R0shanShrestha", Icon: Github },
+  { label: "LinkedIn", href: "https://linkedin.com/in/roshan-shrestha-4aa2b62b8", Icon: Linkedin },
   { label: "Email", href: "mailto:roshanstha401@gmail.com", Icon: Mail },
 ];
 
