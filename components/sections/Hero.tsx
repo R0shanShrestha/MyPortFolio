@@ -1,5 +1,6 @@
 "use client";
 
+// Hero section — full-screen immersive layout
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDown, ArrowUpRight, MapPin, Mail, Github, Linkedin } from "lucide-react";
 import { SiReact, SiNextdotjs, SiNodedotjs, SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
