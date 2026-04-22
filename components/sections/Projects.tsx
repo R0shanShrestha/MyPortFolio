@@ -48,6 +48,17 @@ const projects = [
     liveUrl: "https://iphoneredesign.vercel.app/",
     githubUrl: "https://github.com/R0shanShrestha/IphoneMockup",
   },
+  {
+    id: "studybuddy",
+    number: "05",
+    title: "Study Buddy",
+    image: "/assets/projects/studybuddy.jpeg",
+    description:
+      "A collaborative learning platform for students to share resources, form study groups, and track progress together.",
+    tags: ["React", "Tailwind CSS", "Node.js", "Ai Integration", "MongoDB"],
+    liveUrl: "https://study-buddy-ai-lac.vercel.app/",
+    githubUrl: "https://github.com/R0shanShrestha/StudyBuddyAi",
+  },
 ];
 
 export default function ProjectsSection() {

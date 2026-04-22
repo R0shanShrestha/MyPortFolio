@@ -54,7 +54,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-svh flex flex-col overflow-hidden pt-24 md:pt-0 md:justify-center"
+      className="relative min-h-svh flex flex-col overflow-hidden pt-24  md:pt-24 md:justify-center"
     >
       {/* ─────────── BACKGROUND LAYERS ─────────── */}
 
