@@ -101,7 +101,7 @@ export default function ProjectsSection() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="font-mono text-5xl font-bold text-white/5 group-hover:text-white/10 transition-colors duration-700 select-none object-cover object-center w-full h-full"
+                      className="font-mono  text-5xl font-bold text-white/5 group-hover:text-white/10 transition-colors duration-700 select-none object-cover object-top w-full h-full"
                     />
                   </div>
                   <div className="absolute inset-0 flex items-end p-6">
